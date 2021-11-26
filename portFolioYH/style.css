@@ -1,0 +1,163 @@
+/* <navbar> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+}
+.hamburger {
+    display: none;
+    margin: 5%;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #707070;
+}
+
+.nav-link:hover{
+    color: #C06565;
+}
+
+.nav-logo {
+   display: flex;
+   flex-direction:row ;
+   align-items: flex-end;
+   }
+   .nav-portfolio{
+       width:100px;
+       height: 30px;
+       margin-left: 5%;
+   }
+.logo{  
+    width: 80px;
+    height: 45px;
+    margin-left: 100%;
+}
+.homeYH{
+    width: 1500px;
+    height: 1200px;
+    position: absolute; 
+    top: -500px;
+    right: -400px;
+/* margin-top: -500px; */
+    /* margin-left: 200px; */
+}
+.imgYH{
+    overflow: hidden;
+}
+/* .background{ 
+    background:  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+/* .background{    
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+    height: auto;
+} */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+/* #heart {
+    position:relative; 
+    width:100px; 
+    height:200px;
+    margin-top:10px; /* leave some space above */
+    /* margin-left: 90%;
+} */
+/* #heart:before {
+    position: absolute; 
+    content: ""; 
+    left: 384px;
+top: -658px;
+width: 565px;
+height: 500px;
+    background: #2859EE; /* assign a nice red color */
+    /* border-radius: 850px 850px 0 0;  make the top edge round  */
+    /* -webkit-transform: rotate(-120deg); 45 degrees rotation counter clockwise */
+       /* -moz-transform: rotate(-120deg);  */
+        /* -ms-transform: rotate(-120deg);  */
+         /* -o-transform: rotate(-120deg);  */
+            /* transform: rotate(-120deg);  */
+    /* -webkit-transform-origin: 0 100%; Rotate it around the bottom-left corner */
+       /* -moz-transform-origin: 0 100%;  */
+        /* -ms-transform-origin: 0 100%;  */
+         /* -o-transform-origin: 0 100%;  */
+            /* transform-origin: 0 100%; */
+/* }  */
